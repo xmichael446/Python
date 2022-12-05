@@ -27,7 +27,7 @@ def polar_force(
 
 
 def in_static_equilibrium(
-    forces: array, location: array, eps: float = 10 ** -1
+    forces: array, location: array, eps: float = 10**-1
 ) -> bool:
     """
     Check if a system is in equilibrium.

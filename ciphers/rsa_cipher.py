@@ -58,8 +58,8 @@ def getTextFromBlocks(blockInts, messageLength, blockSize=DEFAULT_BLOCK_SIZE):
         blockMessage = []
         for i in range(blockSize - 1, -1, -1):
             if len(message) + i < messageLength:
-                asciiNumber = blockInt // (BYTE_SIZE ** i)
-                blockInt = blockInt % (BYTE_SIZE ** i)
+                asciiNumber = blockInt // (BYTE_SIZE**i)
+                blockInt = blockInt % (BYTE_SIZE**i)
                 blockMessage.insert(0, chr(asciiNumber))
         message.extend(blockMessage)
     return "".join(message)

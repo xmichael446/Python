@@ -10,7 +10,7 @@ def intersection(
         x_n2 = x_n1 - (
             function(x_n1) / ((function(x_n1) - function(x_n)) / (x_n1 - x_n))
         )
-        if abs(x_n2 - x_n1) < 10 ** -5:
+        if abs(x_n2 - x_n1) < 10**-5:
             return x_n2
         x_n = x_n1
         x_n1 = x_n2

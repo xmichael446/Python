@@ -56,7 +56,7 @@ def solution(a_limit: int, b_limit: int) -> int:
             if is_prime(b):
                 count = 0
                 n = 0
-                while is_prime((n ** 2) + (a * n) + b):
+                while is_prime((n**2) + (a * n) + b):
                     count += 1
                     n += 1
                 if count > longest[0]:
