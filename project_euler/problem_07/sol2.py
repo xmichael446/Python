@@ -8,7 +8,7 @@ We can see that the 6th prime is 13. What is the Nth prime number?
 
 
 def isprime(number):
-    for i in range(2, int(number ** 0.5) + 1):
+    for i in range(2, int(number**0.5) + 1):
         if number % i == 0:
             return False
     return True

@@ -30,7 +30,7 @@ def count_divisors(n):
         if n % i == 0:
             nDivisors += 2
     # check if n is perfect square
-    if n ** 0.5 == int(n ** 0.5):
+    if n**0.5 == int(n**0.5):
         nDivisors -= 1
     return nDivisors
 

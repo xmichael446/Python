@@ -16,7 +16,7 @@ def solution(power):
     >>> solution(15)
     26
     """
-    num = 2 ** power
+    num = 2**power
     string_num = str(num)
     list_num = list(string_num)
     sum_of_num = 0
@@ -29,6 +29,6 @@ def solution(power):
 
 if __name__ == "__main__":
     power = int(input("Enter the power of 2: ").strip())
-    print("2 ^ ", power, " = ", 2 ** power)
+    print("2 ^ ", power, " = ", 2**power)
     result = solution(power)
     print("Sum of the digits is: ", result)
